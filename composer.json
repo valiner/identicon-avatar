@@ -1,0 +1,26 @@
+{
+    "name": "valiner\/identicon-avatar",
+    "description": "php生成identicon头像",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "valiner",
+            "email": "coder.sdp@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Valiner\\IdenticonAvatar\\": "./src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Valiner\\IdenticonAvatar\\ServiceProvider"
+            ]
+        }
+    }
+}
