@@ -1,19 +1,52 @@
 <h1 align="center"> identicon-avatar </h1>
 
-<p align="center"> php生成identicon头像.</p>
-
 [![Build Status](https://travis-ci.org/valiner/identicon-avatar.svg?branch=master)](https://travis-ci.org/valiner/identicon-avatar)
 
+<p align="center"> 
+identicon 根据一个字符串(可以是用户的ID或者IP)的哈希值生成大量不重复的头像
+很多大型IT网站上可以见到，比如 Github、Sourceforge、Stackoveflow。
+</p>
 
-## Installing
+## 安装
 
 ```shell
 $ composer require valiner/identicon-avatar -vvv
 ```
 
-## Usage
+## 使用
+### 非laravel
+```php
+<?php
+require __DIR__.'/vendor/autoload.php';
 
-TODO
+use Valiner\IdenticonAvatar\Identicon;
+
+$identicon = new Identicon();
+//浏览器输出'sdp'的125px的图像
+$identicon->getAvatar('sdp',125);
+```
+
+### laravel
+```php
+app('identicon')->getAvatar('sdp',125);
+```
+
+### 方法
+> 浏览器输出'sdp'的125px的图像
+```php
+$identicon->getAvatar('sdp',125)
+```
+> 保存'sdp'的125px的图像的图像到本地
+```php
+$identicon->saveAvatar('sdp',125,__DIR_.'/test.png')
+```
+
+> 获取'sdp'的125px的图像的的BASE64
+```php
+$identicon->getAvatarDataUri('sdp',125)
+```
+
+
 
 
 ## License

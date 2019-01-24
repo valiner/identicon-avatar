@@ -2,6 +2,8 @@
 
 namespace Valiner\IdenticonAvatar;
 
+require __DIR__.'/../vendor/autoload.php';
+
 use Valiner\IdenticonAvatar\Matrix\Matrix;
 use Valiner\IdenticonAvatar\Generator\Generator;
 
@@ -26,7 +28,7 @@ class Identicon
         $matrixArr = $this->matrix->getMatrix($str);
         header('Content-Type: image/png');
         echo $this->generator->getImage($matrixArr, $size, $this->matrix->getColor());
-
+        die;
     }
 
     /**
@@ -42,7 +44,14 @@ class Identicon
             throw new \Exception('路径不能为空');
         }
         $matrixArr = $this->matrix->getMatrix($str);
-        imagepng($this->generator->getImageResource($matrixArr, $size, $this->matrix->getColor()), $path);
+
+        try{
+            imagepng($this->generator->getImageResource($matrixArr, $size, $this->matrix->getColor()), $path);
+        }
+        catch (\Exception $e){
+            echo $e->getMessage();
+        }
+
     }
 
     /**
@@ -60,4 +69,4 @@ class Identicon
 }
 
 $ide = new Identicon();
-$ide->getAvatarDataUri('sdp', 25);
+$ide->saveAvatar('sdp', 25,'xxx.png');
