@@ -73,7 +73,7 @@ class Matrix
     /**
      * @return array
      */
-    public function getColor(): array
+    public function getColor()
     {
         return $this->color;
     }
@@ -81,7 +81,7 @@ class Matrix
     /**
      * @param array $color
      */
-    public function setColor(array $color): void
+    public function setColor(array $color)
     {
         $this->color = $color;
     }
