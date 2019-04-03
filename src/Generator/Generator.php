@@ -37,13 +37,6 @@ class Generator
         return $this->generatedImage;
     }
 
-    /**
-     * 获取图片
-     * @param $matrixArr
-     * @param $size
-     * @param $color
-     * @return false|string
-     */
     public function getImage($matrixArr,$size,$color)
     {
         $imageResource =  $this->getImageResource($matrixArr,$size,$color);
