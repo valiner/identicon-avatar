@@ -1,6 +1,9 @@
 <h1 align="center"> identicon-avatar </h1>
 
 [![Build Status](https://travis-ci.org/valiner/identicon-avatar.svg?branch=master)](https://travis-ci.org/valiner/identicon-avatar)
+[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
+[![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
+
 
 <p align="center"> 
 identicon 根据一个字符串(可以是用户的ID或者IP)的哈希值生成大量不重复的头像
