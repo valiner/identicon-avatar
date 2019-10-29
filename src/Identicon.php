@@ -2,8 +2,6 @@
 
 namespace Flex\IdenticonAvatar;
 
-require __DIR__.'/../vendor/autoload.php';
-
 use Flex\IdenticonAvatar\Matrix\Matrix;
 use Flex\IdenticonAvatar\Generator\Generator;
 
