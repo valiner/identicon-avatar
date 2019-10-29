@@ -1,5 +1,5 @@
 {
-    "name": "valiner\/identicon-avatar",
+    "name": "flex/identicon-avatar",
     "description": "php生成identicon头像",
     "keywords": ["php", "laravel", "avatar","identicon"],
     "license": "MIT",
