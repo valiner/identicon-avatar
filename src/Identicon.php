@@ -1,11 +1,11 @@
 <?php
 
-namespace Valiner\IdenticonAvatar;
+namespace Flex\IdenticonAvatar;
 
 require __DIR__.'/../vendor/autoload.php';
 
-use Valiner\IdenticonAvatar\Matrix\Matrix;
-use Valiner\IdenticonAvatar\Generator\Generator;
+use Flex\IdenticonAvatar\Matrix\Matrix;
+use Flex\IdenticonAvatar\Generator\Generator;
 
 class Identicon
 {

@@ -1,5 +1,5 @@
 <?php
-namespace Valiner\IdenticonAvatar\Generator;
+namespace Flex\IdenticonAvatar\Generator;
 
 class Generator
 {

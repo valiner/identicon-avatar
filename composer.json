@@ -10,20 +10,20 @@
         }
     ],
     "require": {
-       
+
     },
     "require-dev": {
          "phpunit/phpunit": "~5"
     },
     "autoload": {
         "psr-4": {
-            "Valiner\\IdenticonAvatar\\": "./src/"
+            "Flex\\IdenticonAvatar\\": "./src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Valiner\\IdenticonAvatar\\ServiceProvider"
+                "Flex\\IdenticonAvatar\\ServiceProvider"
             ]
         }
     }

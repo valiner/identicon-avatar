@@ -1,9 +1,9 @@
 <?php
 
-namespace Valiner\IdenticonAvatar\Tests;
+namespace Flex\IdenticonAvatar\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Valiner\IdenticonAvatar\Identicon;
+use Flex\IdenticonAvatar\Identicon;
 
 class IdenticonTest extends TestCase
 {

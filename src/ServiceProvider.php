@@ -1,6 +1,6 @@
 <?php
 
-namespace Valiner\IdenticonAvatar;
+namespace Flex\IdenticonAvatar;
 
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider

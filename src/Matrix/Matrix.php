@@ -1,6 +1,6 @@
 <?php
 
-namespace Valiner\IdenticonAvatar\Matrix;
+namespace Flex\IdenticonAvatar\Matrix;
 
 class Matrix
 {
