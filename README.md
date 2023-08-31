@@ -26,6 +26,7 @@ use Valiner\IdenticonAvatar\Identicon;
 
 $identicon = new Identicon();
 //浏览器输出'sdp'的125px的图像
+
 $identicon->getAvatar('sdp',125);
 ```
 
